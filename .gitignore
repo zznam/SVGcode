@@ -1,4 +1,26 @@
-node_modules
+node_modules/
 .DS_Store
+Thumbs.db
+desktop.ini
 *.local
-/.idea/
+.idea/
+.vscode/
+*.log
+
+# Large local asset cache
+material-design-icons/
+
+# Tooling & System ignores
+*.tmp
+.env
+.env.local
+dist/
+build/
+.cache/
+coverage/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
