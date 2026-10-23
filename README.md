@@ -25,6 +25,16 @@ on Windows.
 <a href="https://play.google.com/store/apps/details?id=de.svgco.twa"><img height="50px" src="https://raw.githubusercontent.com/tomayac/SVGcode/main/public/badges/play-store.svg"></a>
 <a href="https://www.microsoft.com/en-us/p/svgcode/9plhxdgsw1rj#activetab=pivot:overviewtab"><img height="50px" src="https://raw.githubusercontent.com/tomayac/SVGcode/main/public/badges/microsoft-store.svg"></a>
 
+## Local HTTPS preview
+
+Install with `npm ci`; icons are supplied by the pinned
+`@material-design-icons/svg` package rather than an install-time GitHub download.
+For HTTPS, build first and run
+`npm run https-preview -- -C /path/to/cert.pem -K /path/to/key.pem`.
+The preview binds to localhost on port 5001. Supply your own local development
+certificate; the command does not install trust certificates or request elevated
+privileges. Normal `npm run serve` remains available for HTTP preview.
+
 ## Developing and/or contributing
 
 1. Fork this repository.
